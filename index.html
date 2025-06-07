@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agatha Alvy – Penulis</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --biru: #2a9df4;
+      --hijau: #34c759;
+      --putih: #ffffff;
+      --gelap: #1a1a1a;
+      --abu: #f4f4f4;
+      --teks: #1a1a1a;
+      --link-color: #0077cc;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --putih: #1e1e1e;
+        --gelap: #ffffff;
+        --abu: #121212;
+        --teks: #e0e0e0;
+        --link-color: #2dc1ff;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--abu);
+      color: var(--teks);
+      transition: all 0.3s ease-in-out;
+    }
+
+    header {
+      background: linear-gradient(to right, var(--biru), var(--hijau));
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: var(--putih);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: var(--biru);
+      margin-bottom: 1rem;
+    }
+
+    .story-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .story-btn {
+      display: block;
+      background: linear-gradient(to right, var(--biru), var(--hijau));
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      border-radius: 0.7rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .story-btn:hover {
+      transform: scale(1.03);
+      background: linear-gradient(to right, var(--hijau), var(--biru));
+    }
+
+    .coming-soon {
+      background: linear-gradient(to right, var(--putih), var(--gelap));
+      cursor: not-allowed;
+      color: #eee;
+      font-style: italic;
+    }
+
+    .coming-soon:hover {
+      transform: scale(1.03);
+      background: linear-gradient(to right, var(--gelap), var(--putih));
+    }
+
+    .contact-info p {
+      margin: 0.5rem 0;
+      line-height: 1.6;
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.8rem 1.2rem;
+      background-color: var(--link-color);
+      color: white;
+      border: none;
+      border-radius: 0.6rem;
+      font-size: 1rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .social-btn:hover {
+      transform: scale(1.03);
+      background-color: var(--hijau);
+      color: white;
+    }
+
+    .social-btn i {
+      font-size: 1.2rem;
+    }
+
+    a {
+      color: var(--link-color);
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    a:hover {
+      color: var(--hijau);
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .container {
+        padding: 1.5rem;
+      }
+      .story-btn {
+        font-size: 1rem;
+        padding: 0.8rem;
+      }
+    }
+
+    .banner-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+    }
+
+    .profile-info {
+      text-align: center;
+      margin-top: -4rem;
+      padding: 1rem;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid var(--putih);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      background-color: var(--putih);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .profile-pic {
+        border: 4px solid var(--abu);
+        background-color: var(--abu);
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header class="banner-header">
+    <img src="WhatsApp Image 2025-06-06 at 9.42.42 PM (1).jpeg" alt="Banner" class="banner-img" />
+    <div class="profile-info">
+      <img src="WhatsApp Image 2025-06-06 at 9.42.42 PM.jpeg" alt="Foto Profil" class="profile-pic" />
+      <h1>Agatha Alvy</h1>
+      <p>Penulis Fiksi & Pencipta projek Cerita</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="bio">
+      <h2>Agatha Alavania</h2>
+      <p>
+        Hai! Aku seorang penulis fiksi yang fokus pada penciptaan projek-projek yang unik dengan cerita-cerita di masing-masing projek yang saling terhubung. Latar cerita yang ku buat beragam seperti fantasi, misteri, hingga kriminal. Aku harap kalian dapat menikmati cerita yang saya buat.
+      </p>
+    </section>
+
+    <section class="projects">
+      <h2>List Story Projects</h2>
+      <div class="story-buttons">
+        <a href="project_tenebris.html" class="story-btn">Project Tenebris</a>
+        <a class="story-btn coming-soon" href="#" onclick="return false;">Coming Soon</a>
+        <a class="story-btn coming-soon" href="#" onclick="return false;">Coming Soon</a>
+      </div>
+    </section>
+
+    <section class="contact-info">
+      <h2>Kontak Profesional</h2>
+      <div class="social-links">
+        <a href="mailto:agathalavania@gmail.com" class="social-btn">
+          <i class="fas fa-envelope"></i> Email : agathalavania@gmail.com
+        </a>
+        <a href="https://instagram.com/agatha.alvy" class="social-btn" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram : @agatha.alvy
+        </a>
+        <a href="https://x.com/Agatha_Alavania" class="social-btn" target="_blank">
+          <i class="fab fa-twitter"></i> Twitter/X : @Agatha_Alavania
+        </a>
+        <a href="https://trakteer.id/agatha_alavania" class="social-btn" target="_blank">
+          <i class="fas fa-donate"></i> Saweria
+        </a>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>

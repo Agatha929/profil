@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Tenebris</title>
+  <style>
+    :root {
+      --biru: #2a9df4;
+      --hijau: #34c759;
+      --putih: #ffffff;
+      --gelap: #1a1a1a;
+      --abu: #f4f4f4;
+      --teks: #1a1a1a;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --putih: #1e1e1e;
+        --gelap: #ffffff;
+        --abu: #121212;
+        --teks: #e0e0e0;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--abu);
+      color: var(--teks);
+      transition: all 0.3s ease-in-out;
+    }
+
+    header {
+      background: linear-gradient(to right, var(--biru), var(--hijau));
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+    }
+
+    header h1 {
+      font-size: 2.3rem;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: var(--putih);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: var(--biru);
+      margin-bottom: 1rem;
+    }
+
+    .novel-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .novel-btn {
+      display: block;
+      background: linear-gradient(to right, var(--biru), var(--hijau));
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      border-radius: 0.7rem;
+      font-size: 1.05rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .novel-btn:hover {
+      transform: scale(1.03);
+      background: linear-gradient(to right, var(--hijau), var(--biru));
+    }
+
+    .coming-soon {
+      background: linear-gradient(to right, var(--putih), var(--gelap));
+      cursor: not-allowed;
+      color: #eee;
+      font-style: italic;
+    }
+
+    .coming-soon:hover {
+      transform: scale(1.03);
+      background: linear-gradient(to right, var(--gelap), var(--putih));
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .container {
+        padding: 1.5rem;
+      }
+      .novel-btn {
+        font-size: 1rem;
+        padding: 0.8rem;
+      }
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.8rem 1.2rem;
+      background: linear-gradient(to right, var(--hijau), var(--biru));
+      color: white;
+      border-radius: 0.6rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      transform: scale(1.03);
+      background: linear-gradient(to right, var(--biru), var(--hijau));
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Project Tenebris</h1>
+    <p>First Project</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Tentang Project</h2>
+      <p>
+        Project Tenebris adalah dunia fiksi yang penuh misteri dengan misteri. Dalam dunia ini, setiap karakter membawa beban masa lalu yang kelam, dan setiap konflik menyimpan rahasia yang lebih besar dari yang terlihat.
+      </p>
+    </section>
+
+    <section>
+      <h2>Daftar Cerita dalam Projek Ini</h2>
+      <div class="novel-buttons">
+        <a href="tenebris.html" class="novel-btn">Tenebris: Rise from Betrayal</a>
+        <a href="#" class="novel-btn coming-soon" onclick="return false;">Cladis: Coming Soon</a>
+        <a href="#" class="novel-btn coming-soon" onclick="return false;">Nexcorvus: Coming Soon</a>
+        <a href="#" class="novel-btn coming-soon" onclick="return false;">Mortis: Coming Soon</a>
+      </div>
+
+      <a href="index.html" class="back-btn">🏠 Beranda</a>
+    </section>
+  </div>
+
+</body>
+</html>
